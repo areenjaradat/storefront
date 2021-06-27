@@ -10,7 +10,7 @@ import {
   Button,
   makeStyles,
 } from '@material-ui/core/';
-import { increment } from '../store/products-reducer';
+import { increment } from '../store/actions';
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Status = (props) => {
+const Products = (props) => {
   const classes = useStyles();
   return (
     <Container className={classes.cardGrid} maxWidth="md">
@@ -49,12 +49,18 @@ const Status = (props) => {
                     {product.name}
                   </Typography>
                   <Typography>Price: ${product.price}</Typography>
+                  <Typography>
+                    {product.inStock > 0
+                      ? `In stock, ${product.inStock} items left`
+                      : 'Out of Stock'}
+                  </Typography>
                 </CardContent>
                 <CardActions>
                   <Button
                     size="small"
                     color="primary"
-                    onClick={() => props.increment()}
+                    onClick={() => props.increment(product)}
+                    disabled={product.inStock > 0 ? false : true}
                   >
                     ADD TO CART
                   </Button>
@@ -73,4 +79,4 @@ const Status = (props) => {
 
 const mapStateToProps = (state) => ({ products: state.products });
 const mapDispatchToProps = { increment };
-export default connect(mapStateToProps, mapDispatchToProps)(Status);
+export default connect(mapStateToProps, mapDispatchToProps)(Products);
