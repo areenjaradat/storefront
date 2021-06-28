@@ -43,6 +43,7 @@ let initialState = {
     const map = new Map();
     for (const item of arr) {
       if (!map.has(item._id)) {
+        console.log('!map.has(item._id)',(!map.has(item._id)))
         map.set(item._id, {
           id: item._id,
           name: item.name,
@@ -52,6 +53,7 @@ let initialState = {
           inStock: item.inStock,
           count: item.count,
         });
+        console.log('if',map)
       } else {
         map.delete(item._id);
         map.set(item._id, {
@@ -63,6 +65,7 @@ let initialState = {
           inStock: item.inStock,
           count: item.count,
         });
+        console.log('else',map)
       }
     }
     return Array.from(map.values());
