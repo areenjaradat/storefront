@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { active } from '../store/categories-reducer';
+import { active } from '../store/actions';
 import { Button, Grid } from '@material-ui/core';
 
 const activeCategories = (props) => {
