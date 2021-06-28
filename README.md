@@ -8,7 +8,7 @@ Virtual Store Phase 2: Continue work on the e-Commerce storefront, breaking up t
 
 ## lab37
 
-[deployed link](https://60d34c22a1d9cb000703de74--priceless-fermi-d3b36f.netlify.app/?text=&difficulty=1&assignee=)
+[deployed link](https://60da0aa34992ed00077827ac--fervent-edison-d0cf00.netlify.app)
 
 ## lab36
 
