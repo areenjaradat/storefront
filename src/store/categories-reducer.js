@@ -3,12 +3,12 @@ let initialState = {
     {
       name: 'food',
       display_name: 'Food',
-      description: 'Good food = Good mood',
+      description: 'Good food make a good mood',
     },
     {
       name: 'electronics',
       display_name: 'Electronics',
-      description: 'Making your life easier, one volt at a time',
+      description: 'Making your life easier',
     },
     {
       name: 'clothing',
