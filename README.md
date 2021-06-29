@@ -6,6 +6,10 @@ Virtual Store Phase 1: For this assignment, you will be starting the process of 
 
 Virtual Store Phase 2: Continue work on the e-Commerce storefront, breaking up the store into multiple reducers and sharing functionality/data between components
 
+## lab38
+
+[deployed link](https://60db55c9a1a8e2000732e00c--fervent-edison-d0cf00.netlify.app)
+
 ## lab37
 
 [deployed link](https://60da0aa34992ed00077827ac--fervent-edison-d0cf00.netlify.app)
