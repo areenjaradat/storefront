@@ -15,8 +15,10 @@ const Footer = () => {
         Your favorite destination for online shopping.
       </Typography>
       <Typography
+        variant="subtitle1"
         align="center"
         color="inherit"
+        component="p"
       >
         <Link color="inherit" href="mailto:storefront@codefellows.com">storefront@codefellows.com</Link>
       </Typography>
